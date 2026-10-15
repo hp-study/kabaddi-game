@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Play — Kabaddi</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/game.js" defer></script>
+</head>
+<body>
+  <header class="nav">
+    <h1>Kabaddi Joy</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="game.html">Play</a>
+      <a href="register.html">Register</a>
+      <a href="login.html">Login</a>
+      <a href="rankings.html">Rankings</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="game-area">
+      <div class="controls">
+        <button id="startBtn" class="btn">Start Single</button>
+        <button id="startCpuBtn" class="btn ghost">Start vs CPU</button>
+        <span id="playerName" class="small">Guest</span>
+      </div>
+      <canvas id="arena" width="640" height="360"></canvas>
+      <div class="hud">
+        <div>Time: <span id="time">0</span></div>
+        <div>Score: <span id="score">0</span></div>
+        <div class="bar"><i></i></div>
+        <div id="status" class="status">Ready</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">Use arrow keys. Hold Space to dash. Collect power-ups.</footer>
+</body>
+</html>
